@@ -21,6 +21,11 @@ p{
 }
 nav ul{
     list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:0;
+    margin:0;
 }
 nav ul li{
     display:inline;
@@ -72,6 +77,11 @@ section{
     border-radius:8px;
     padding:20px;
 }
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
 input[type="text"],
 select{
     width:100%;
@@ -92,4 +102,22 @@ select:focus{
 
 #submit-btn:hover{
     background-color:#1d4ed8;
+}
+@media (max-width:768px){
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    main,
+    .form-container{
+        width:95%;
+    }
+
+    .data-table{
+        display:block;
+        overflow-x:auto;
+    }
+
 }
